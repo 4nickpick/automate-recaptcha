@@ -10,7 +10,7 @@
 
 $success = false;
 $errors = [];
-$is_test_environment = true; //getenv('atp_environment') == 'my_test_environment';
+$is_test_environment = getenv('atp_environment') == 'my_test_environment';
 
 if (!empty($_POST['name'])) {
 
